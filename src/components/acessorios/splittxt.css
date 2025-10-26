@@ -1,0 +1,21 @@
+.split-title-container {
+  text-align: center;
+  color: #fff;
+}
+
+.titulo {
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  color: #DDE6ED; /* dourado vibrante */
+}
+
+.split-letter {
+  display: inline-block;
+}

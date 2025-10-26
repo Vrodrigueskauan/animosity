@@ -1,0 +1,65 @@
+.historia-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 10%;
+  gap: 40px;
+  flex-wrap: wrap; /* Ensures responsiveness on mobile */
+}
+
+.historia-texto {
+  flex: 1;
+  min-width: 280px;
+  color: #fff;
+}
+
+.esquerda {
+  text-align: left;
+}
+
+.direita {
+  text-align: right;
+}
+
+.historia-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #9DB2BF; /* Gold color */
+}
+
+.historia-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .historia-container {
+    flex-direction: column; /* Stack items vertically */
+    padding: 40px 5%;
+    gap: 20px;
+  }
+  
+  .historia-texto {
+    width: 100%; /* Full width on mobile */
+    min-width: auto; /* Remove minimum width constraint */
+  }
+  
+  .esquerda, .direita {
+    text-align: left; /* Unified alignment on mobile */
+  }
+}
+
+/* Small mobile view */
+@media (max-width: 480px) {
+  .historia-container {
+    padding: 30px 15px; /* More compact padding */
+  }
+  
+  .historia-texto h2 {
+    font-size: 1.4rem; /* Slightly smaller heading */
+  }
+  
+  .historia-texto p {
+    font-size: 0.95rem; /* Slightly smaller paragraph text */
+  }
+}

@@ -1,0 +1,220 @@
+/* === ESTILO PADRÃO (PC, TABLET) === */
+.personagens {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.descricao-personagens {
+  margin-left: 10%;
+}
+
+.hero {
+  margin-right: 35%;
+}
+
+.hero-photo {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  border: 2px solid whitesmoke;
+}
+
+.extra-title {
+  text-align: center;
+  font-size: 50px;
+}
+
+.extra-subtitle {
+  text-align: center;
+  font-size: 25px;
+  color: #496c84;
+}
+
+.extra-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.image-content {
+  margin-right: 8%;
+}
+
+.section-text {
+  text-align: left;
+  margin-right: 25%;
+  max-width: 100%;
+  font-size: 20px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: #689abb;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.img-container {
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  margin-right: 15%;
+}
+
+.img-container:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+.img-container img {
+  max-width: 480px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.img-container img:hover {
+  transform: scale(1.03);
+}
+
+.img-gallery {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 5%;
+}
+
+.text-gallery {
+  margin-right: 10%;
+}
+
+.title-gallery {
+  text-align: center;
+  color: #9DB2BF;
+  font-size: 3rem;
+}
+
+.paragrafos {
+  text-align: left;
+  font-size: 25px;
+  color: #496c84;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.texto {
+  text-align: right;
+  font-size: 25px;
+  color: #496c84;
+  margin: 1%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.about-img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+/* === RESPONSIVIDADE: CELULARES === */
+@media (max-width: 768px) {
+
+  /* Personagens: imagens acima do texto */
+  .personagens {
+    flex-direction: column;       /* Coloca os itens em coluna */
+    align-items: center;
+    text-align: center;
+  }
+
+  .descricao-personagens {
+    margin-left: 0;
+    margin-top: 20px;             /* Espaçamento entre imagem e texto */
+  }
+
+  .hero {
+    margin-right: 0;
+  }
+
+  .hero-photo {
+    width: 90%;                   /* Imagem se adapta bem à tela */
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* Extra Info: imagens acima */
+  .extra-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .section-text {
+    margin-right: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* Galeria: empilha as imagens */
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .img-container {
+    margin-right: 0;
+  }
+
+  .img-container img {
+    max-width: 95%;
+  }
+
+  /* About: imagem acima do texto */
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto {
+    text-align: center;
+    margin: 10px 5%;
+  }
+
+  .about-img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .extra-title {
+    font-size: 36px;
+  }
+
+  .extra-subtitle {
+    font-size: 20px;
+  }
+}
